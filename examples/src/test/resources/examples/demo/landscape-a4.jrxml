@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 5.6.2.final using JasperReports Library version 5.6.1  -->
+<!-- 2014-10-17T15:11:30 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9a3e59f5-6675-48cf-ad74-9c42b5a5b290">
+	<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="map" class="java.lang.String"/>
+	<parameter name="scalebar" class="java.lang.String"/>
+	<parameter name="northArrow" class="java.lang.String"/>
+	<parameter name="mapContext" class="org.mapfish.print.attribute.map.MapfishMapContext"/>
+	<parameter name="permalink" class="java.lang.String"/>
+	<parameter name="qrcode" class="java.lang.String"/>
+	<title>
+		<band height="554" splitType="Stretch">
+			<staticText>
+				<reportElement x="260" y="0" width="210" height="36" forecolor="#FF6122" uuid="3988392b-f1e2-4eda-9cb4-7caa2b3eb0cc"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[MapFish Print 3]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="251" height="36" uuid="a21ab313-cc67-4708-be1b-1b2de78054d6"/>
+				<imageExpression><![CDATA["logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="470" y="0" width="332" height="36" forecolor="#787E81" uuid="6c88d973-385e-43b6-b810-7a56e350196a"/>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[The purpose of Mapfish Print is to create reports that contain maps (and map related components) within them. The project is a Java based servlet/library/application based on the mature Jasper Reports Library. ]]></text>
+			</staticText>
+			<frame>
+				<reportElement x="0" y="51" width="800" height="500" uuid="736ee39a-6f6c-4f5b-aa03-ed7c95233de3">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<topPen lineWidth="1.0" lineColor="#787E81"/>
+					<leftPen lineWidth="1.0" lineColor="#787E81"/>
+					<bottomPen lineWidth="1.0" lineColor="#787E81"/>
+					<rightPen lineWidth="1.0" lineColor="#787E81"/>
+				</box>
+				<subreport>
+					<reportElement x="0" y="0" width="800" height="500" uuid="fa145068-76a5-4834-98ed-ce65b1976b3d">
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<subreportExpression><![CDATA[$P{map}]]></subreportExpression>
+				</subreport>
+				<image>
+					<reportElement x="725" y="425" width="75" height="75" uuid="3104d9d7-0b26-4cd3-996e-9ef9186376fb">
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<imageExpression><![CDATA[$P{qrcode}]]></imageExpression>
+				</image>
+				<frame>
+					<reportElement mode="Opaque" x="552" y="430" width="164" height="65" backcolor="rgba(120, 126, 129, 0.6862745)" uuid="413b9be9-bdb7-4b3c-b84a-a4a1c01a7166">
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<box>
+						<topPen lineWidth="0.3"/>
+						<leftPen lineWidth="0.3"/>
+						<bottomPen lineWidth="0.3"/>
+						<rightPen lineWidth="0.3"/>
+					</box>
+					<textField>
+						<reportElement x="0" y="36" width="164" height="29" forecolor="#000000" uuid="5644a6b0-3e80-42e2-bffe-6ad99be5aa72">
+							<property name="local_mesure_unitx" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.x" value="px"/>
+							<property name="local_mesure_unity" value="pixel"/>
+							<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						</reportElement>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="8"/>
+						</textElement>
+						<textFieldExpression><![CDATA[String.format("Scale 1: %.0f", $P{mapContext}.getScale().getDenominator()) + "\n" +
+							"Printed on " + new java.text.SimpleDateFormat("dd.MM.yyyy HH:mm").format(new java.util.Date()) + "\n" +
+							$P{permalink}]]></textFieldExpression>
+					</textField>
+					<subreport>
+						<reportElement x="0" y="0" width="164" height="36" uuid="6895f95f-cff4-48db-8697-e699cf1f913c"/>
+						<subreportExpression><![CDATA[$P{scalebar}]]></subreportExpression>
+					</subreport>
+				</frame>
+				<subreport>
+					<reportElement x="750" y="5" width="50" height="50" uuid="310822fe-cc33-4886-bef5-6b5c6ecb746f">
+						<property name="local_mesure_unitwidth" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+						<property name="local_mesure_unitheight" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<property name="local_mesure_unitx" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="local_mesure_unity" value="pixel"/>
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					</reportElement>
+					<subreportExpression><![CDATA[$P{northArrow}]]></subreportExpression>
+				</subreport>
+			</frame>
+		</band>
+	</title>
+</jasperReport>

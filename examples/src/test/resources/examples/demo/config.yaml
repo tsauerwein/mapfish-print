@@ -1,0 +1,29 @@
+
+templates:
+  # Create a template "A4 Landscape"
+  A4 Landscape: !template
+    reportTemplate: landscape-a4.jrxml
+    attributes:
+      permalink: !string {}
+      qrcode: !string {}
+      mapDef: !map
+        maxDpi: 400
+        width: 800
+        height: 500
+      scalebarDef: !scalebar
+        width: 164
+        height: 36
+        default:
+          align: center
+      northArrowDef: !northArrow
+        size: 50
+    processors:
+    - !createMap
+      inputMapper: {mapDef: map}
+      outputMapper: {mapSubReport: map}
+    - !createScalebar
+      inputMapper: {mapDef: map, scalebarDef: scalebar}
+      outputMapper: {subReport: scalebar}
+    - !createNorthArrow
+      inputMapper: {mapDef: map, northArrowDef: northArrow}
+      outputMapper: {subReport: northArrow}

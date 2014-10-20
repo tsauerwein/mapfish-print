@@ -1,0 +1,44 @@
+{ "type": "FeatureCollection",
+  "features": [
+    { "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-8235247.60268435, 4980452.31009197]},
+      "properties": {
+        "name": "The Lucerne",
+        "type": "Hotel",
+        "link": "http://www.thelucernehotel.com"
+      }
+    },
+    { "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-8234761.27009297, 4980136.13875006]},
+      "properties": {
+        "name": "American Museum of Natural History",
+        "type": "Museum",
+        "link": "http://www.amnh.org/"
+      }
+    },
+    { "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-8234669.93245078, 4979860.99303866]},
+      "properties": {
+        "name": "Alexander von Humboldt",
+        "type": "Statue",
+        "link": ""
+      }
+    },
+    { "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-8233932.52987986, 4979788.69433509]},
+      "properties": {
+        "name": "King Jagiello Monument",
+        "type": "Statue",
+        "link": ""
+      }
+    },
+    { "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [-8234261.27009297, 4980136.13875006]},
+      "properties": {
+        "name": "Hayden Planetarium",
+        "type": "Museum",
+        "link": "http://www.haydenplanetarium.org"
+      }
+    }
+  ]
+}
