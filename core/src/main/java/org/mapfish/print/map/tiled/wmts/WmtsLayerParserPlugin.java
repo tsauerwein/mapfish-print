@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.Set;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Resource;
 
 /**
  * <p>Renders WMTS layers.</p>
@@ -25,6 +26,8 @@ import javax.annotation.Nonnull;
 public final class WmtsLayerParserPlugin extends AbstractGridCoverageLayerPlugin implements MapLayerFactoryPlugin<WMTSLayerParam> {
     @Autowired
     private ForkJoinPool forkJoinPool;
+    @Resource(name = "requestForkJoinPool")
+    private ForkJoinPool requestForkJoinPool;
 
     @Autowired
     private MetricRegistry registry;
@@ -46,7 +49,7 @@ public final class WmtsLayerParserPlugin extends AbstractGridCoverageLayerPlugin
     public WMTSLayer parse(@Nonnull final Template template,
                            @Nonnull final WMTSLayerParam param) throws Throwable {
         String styleRef = param.rasterStyle;
-        return new WMTSLayer(this.forkJoinPool,
+        return new WMTSLayer(this.forkJoinPool, this.requestForkJoinPool,
                 super.<GridCoverage2D>createStyleSupplier(template, styleRef),
                 param,
                 this.registry);

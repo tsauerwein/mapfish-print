@@ -41,16 +41,18 @@ public class WMTSLayer extends AbstractTiledLayer {
     /**
      * Constructor.
      *
-     * @param executorService the thread pool for doing the rendering.
+     * @param forkJoinPool the thread pool for doing the rendering.
+     * @param requestForkJoinPool the thread pool for making tile/image requests.
      * @param styleSupplier   strategy for loading the style for this layer
      * @param param           the information needed to create WMTS requests.
      * @param registry Metrics registry.
      */
-    protected WMTSLayer(final ForkJoinPool executorService,
+    protected WMTSLayer(final ForkJoinPool forkJoinPool,
+                        final ForkJoinPool requestForkJoinPool,
                         final StyleSupplier<GridCoverage2D> styleSupplier,
                         final WMTSLayerParam param,
                         final MetricRegistry registry) {
-        super(executorService, styleSupplier, param, registry);
+        super(forkJoinPool, requestForkJoinPool, styleSupplier, param, registry);
         this.param = param;
     }
 

@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.Set;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Resource;
 
 /**
  * <p>Renders OpenStreetMap or other tiled layers.</p>
@@ -28,6 +29,8 @@ public final class OsmLayerParserPlugin extends AbstractGridCoverageLayerPlugin 
     private StyleParser parser;
     @Autowired
     private ForkJoinPool forkJoinPool;
+    @Resource(name = "requestForkJoinPool")
+    private ForkJoinPool requestForkJoinPool;
 
     @Autowired
     private MetricRegistry registry;
@@ -50,7 +53,7 @@ public final class OsmLayerParserPlugin extends AbstractGridCoverageLayerPlugin 
                           @Nonnull final OsmLayerParam param) throws Throwable {
 
         String styleRef = param.rasterStyle;
-        return new OsmLayer(this.forkJoinPool,
+        return new OsmLayer(this.forkJoinPool, this.requestForkJoinPool,
                 super.<GridCoverage2D>createStyleSupplier(template, styleRef),
                 param,
                 this.registry);

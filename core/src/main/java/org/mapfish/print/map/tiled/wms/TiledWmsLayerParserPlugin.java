@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.Set;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Resource;
 
 /**
  * <p>Renders tiled WMS layers.</p>
@@ -26,6 +27,8 @@ public final class TiledWmsLayerParserPlugin extends AbstractGridCoverageLayerPl
 
     @Autowired
     private ForkJoinPool forkJoinPool;
+    @Resource(name = "requestForkJoinPool")
+    private ForkJoinPool requestForkJoinPool;
 
     @Autowired
     private MetricRegistry registry;
@@ -49,7 +52,7 @@ public final class TiledWmsLayerParserPlugin extends AbstractGridCoverageLayerPl
             @Nonnull final TiledWmsLayerParam param) throws Throwable {
 
         String styleRef = param.rasterStyle;
-        return new TiledWmsLayer(this.forkJoinPool,
+        return new TiledWmsLayer(this.forkJoinPool, this.requestForkJoinPool,
                 super.<GridCoverage2D>createStyleSupplier(template, styleRef),
                 param,
                 this.registry);
