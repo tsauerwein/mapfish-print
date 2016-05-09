@@ -60,7 +60,8 @@ public class MfClientHttpRequestFactoryImpl extends HttpComponentsClientHttpRequ
         final HttpClientBuilder httpClientBuilder = HttpClients.custom().
                 setRoutePlanner(new MfRoutePlanner()).
                 setSSLSocketFactory(new MfSSLSocketFactory()).
-                setDefaultCredentialsProvider(new MfCredentialsProvider());
+                setDefaultCredentialsProvider(new MfCredentialsProvider()).
+                setMaxConnPerRoute(10);
         return httpClientBuilder.build();
     }
 
