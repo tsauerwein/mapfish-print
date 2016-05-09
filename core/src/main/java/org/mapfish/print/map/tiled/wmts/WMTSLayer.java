@@ -1,8 +1,11 @@
 package org.mapfish.print.map.tiled.wmts;
 
+import com.codahale.metrics.MetricRegistry;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.Multimap;
+
 import jsr166y.ForkJoinPool;
+
 import org.geotools.coverage.grid.GridCoverage2D;
 import org.geotools.geometry.jts.ReferencedEnvelope;
 import org.mapfish.print.URIUtils;
@@ -41,11 +44,13 @@ public class WMTSLayer extends AbstractTiledLayer {
      * @param executorService the thread pool for doing the rendering.
      * @param styleSupplier   strategy for loading the style for this layer
      * @param param           the information needed to create WMTS requests.
+     * @param registry Metrics registry.
      */
     protected WMTSLayer(final ForkJoinPool executorService,
                         final StyleSupplier<GridCoverage2D> styleSupplier,
-                        final WMTSLayerParam param) {
-        super(executorService, styleSupplier, param);
+                        final WMTSLayerParam param,
+                        final MetricRegistry registry) {
+        super(executorService, styleSupplier, param, registry);
         this.param = param;
     }
 
