@@ -1,0 +1,1296 @@
+{
+  "layout": "1 A4 landscape",
+  "srs": "EPSG:21781",
+  "units": "m",
+  "rotation": 0,
+  "app": "config",
+  "lang": "en",
+  "attributes": {
+    "scale": 25000,
+    "url": "https://mf-chsdi3.dev.bgdi.ch/6bbffc4e0d",
+    "qrimage": "https://mf-chsdi3.dev.bgdi.ch/qrcodegenerator?url=https%3A%2F%2Fmf-geoadmin3.dev.bgdi.ch%2Fkom_print_v3%2F%3Ftopic%3Dschneesport%26lang%3Den%26bgLayer%3DvoidLayer%26layers%3Dch.swisstopo.pixelkarte-farbe-pk50.noscale%2Cch.swisstopo.hangneigung-ueber_30%2Cch.swisstopo-karto.hangneigung%2Cch.bafu.wrz-jagdbanngebiete_select%2Cch.bafu.wrz-wildruhezonen_portal%2Cch.bazl.heliports-gebirgslandeplaetze%2Cch.swisstopo-karto.schneeschuhrouten%2Cch.swisstopo-karto.skitouren%2Cch.swisstopo.skitourenkarte-50.metadata%2Cch.bav.haltestellen-oev%26layers_visibility%3Dtrue%2Cfalse%2Ctrue%2Ctrue%2Ctrue%2Cfalse%2Ctrue%2Ctrue%2Cfalse%2Cfalse%26layers_opacity%3D0.85%2C0.5%2C0.2%2C0.6%2C0.6%2C1%2C0.8%2C0.8%2C1%2C1%26catalogNodes%3D2352%26X%3D204571.52%26Y%3D657540.79%26zoom%3D6",
+    "legend": {
+      "name": "",
+      "classes": [{
+        "name": "National Map 1:50'000",
+        "icons": ["https://mf-chsdi3.dev.bgdi.ch/static/images/legends/ch.swisstopo.pixelkarte-farbe-pk50.noscale_en_big.pdf"]
+      }, {
+        "name": "Slope over 30°",
+        "icons": ["https://mf-chsdi3.dev.bgdi.ch/static/images/legends/ch.swisstopo-karto.hangneigung_en.png"]
+      }, {
+        "name": "Wildlife reserves",
+        "icons": ["https://mf-chsdi3.dev.bgdi.ch/static/images/legends/ch.bafu.wrz-jagdbanngebiete_select_en.png"]
+      }, {
+        "name": "Designated wildlife areas",
+        "icons": ["https://mf-chsdi3.dev.bgdi.ch/static/images/legends/ch.bafu.wrz-wildruhezonen_portal_en.png"]
+      }, {
+        "name": "Snowshoe routes",
+        "icons": ["https://mf-chsdi3.dev.bgdi.ch/static/images/legends/ch.swisstopo-karto.schneeschuhrouten_en.png"]
+      }, {
+        "name": "Ski routes",
+        "icons": ["https://mf-chsdi3.dev.bgdi.ch/static/images/legends/ch.swisstopo-karto.skitouren_en.png"]
+      }]
+    },
+    "name": "© swisstopo,FOEN,ct. [FOEN]",
+    "scalebar": {
+      "fontSize": 8,
+      "type": "line"
+    },
+    "scale_string": "Scale",
+    "printed_on": "Printed on",
+    "copyright": "www.geo.admin.ch is a portal provided by the Federal Authorities of the Swiss Confederation to gain insight on publicly accessible geographical information, data and services. \nLimitation of liability. Although every care has been taken by the Federal Authorities to ensure the accuracy of the information published,no warranty can be given in respect of the accuracy,reliability, up-to-dateness or completeness of this information.Copyright, Swiss federal authorities, 2007.http://www.disclaimer.admin.ch/terms_and_conditions.html",
+    "map": {
+      "dpi": 96,
+      "layers": [{
+        "geoJson": {
+          "type": "FeatureCollection",
+          "features": [{
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                [
+                  [658940, 207485],
+              [657980, 206465],
+              [659570, 205415],
+              [661730, 206285],
+              [658940, 207485]
+                ]
+              ]
+            },
+            "properties": {
+              "name": "Polygon 1",
+              "description": "",
+              "__editable__": true,
+              "color": "#ed1c24",
+              "opacity": 0.2,
+              "stroke": 1.25,
+              "size": 10,
+              "angle": 0,
+              "linestyle": "plain",
+              "shape": "circle",
+              "isLabel": false,
+              "__selected__": false,
+              "_ngeo_style_0": "1731"
+            }
+          }, {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [657539.9999999999, 204569.99999999997]
+            },
+            "properties": {
+              "name": "Point 2",
+              "description": "",
+              "__editable__": true,
+              "color": "#ed1c24",
+              "opacity": 0.2,
+              "stroke": 1.25,
+              "size": 10,
+              "angle": 0,
+              "linestyle": "plain",
+              "shape": "circle",
+              "isLabel": false,
+              "__selected__": false,
+              "_ngeo_style_0": "1732"
+            }
+          }, {
+            "type": "Feature",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [657539.9999999999, 204569.99999999997],
+              [657639.9999999999, 204669.99999999997]
+              ]
+            },
+            "properties": {
+              "name": "Line 3",
+              "description": "",
+              "__editable__": true,
+              "color": "#ed1c24",
+              "opacity": 0.2,
+              "stroke": 1.25,
+              "size": 10,
+              "angle": 0,
+              "linestyle": "plain",
+              "shape": "circle",
+              "isLabel": false,
+              "__selected__": false,
+              "_ngeo_style_0": "1733"
+            }
+          }, {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [657539.9999999999, 204569.99999999997]
+            },
+            "properties": {
+              "name": "Label 4",
+              "description": "",
+              "__editable__": true,
+              "color": "#ed1c24",
+              "opacity": 0.2,
+              "stroke": 1.25,
+              "size": 10,
+              "angle": 0,
+              "linestyle": "plain",
+              "shape": "circle",
+              "isLabel": true,
+              "__selected__": false,
+              "_ngeo_style_0": "1734"
+            }
+          }]
+        },
+        "opacity": 1,
+        "style": {
+          "version": 2,
+          "[_ngeo_style_0 = '1731']": {
+            "symbolizers": [{
+              "type": "polygon",
+              "fillColor": "#ed1c24",
+              "fillOpacity": 0.2,
+              "strokeColor": "#ed1c24",
+              "strokeOpacity": 1,
+              "strokeWidth": 1.25
+            }]
+          },
+          "[_ngeo_style_0 = '1732']": {
+            "symbolizers": [{
+              "type": "point",
+              "pointRadius": 10,
+              "fillColor": "#ed1c24",
+              "fillOpacity": 0.2,
+              "strokeColor": "#ed1c24",
+              "strokeOpacity": 1,
+              "strokeWidth": 1.4285714285714286
+            }]
+          },
+          "[_ngeo_style_0 = '1733']": {
+            "symbolizers": [{
+              "type": "line",
+              "strokeColor": "#ed1c24",
+              "strokeOpacity": 1,
+              "strokeWidth": 1.25
+            }]
+          },
+          "[_ngeo_style_0 = '1734']": {
+            "symbolizers": [{
+              "type": "Text",
+              "label": "Label 4",
+              "labelAlign": "start",
+              "labelRotation": "0",
+              "fontWeight": "normal",
+              "fontSize": "10px",
+              "fontFamily": "Sans-serif",
+              "haloColor": "#ffffff",
+              "haloRadius": 2,
+              "fontColor": "#ed1c24",
+              "b": 0,
+              "g": 0
+            }]
+          }
+        },
+        "type": "geojson"
+      }, {
+        "layer": "ch.swisstopo-karto.skitouren",
+        "opacity": "0.8",
+        "type": "WMTS",
+        "baseURL": "http://wmts6.geo.admin.ch/1.0.0/{Layer}/{style}/{Time}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.png",
+        "requestEncoding": "REST",
+        "style": "default",
+        "dimensions": ["Time"],
+        "dimensionParams": {
+          "TIME": "20151202"
+        },
+        "matrixSet": "21781",
+        "matrices": [{
+          "identifier": "0",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 14285750.5715,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "1",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 13392891.1608,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "2",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 12500031.7501,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "3",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 11607172.3393,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "4",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 10714312.9286,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "5",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 9821453.51791,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "6",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 8928594.10719,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "7",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 8035734.69647,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "8",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 7142875.28575,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "9",
+          "matrixSize": [2, 1],
+          "scaleDenominator": 6250015.87503,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "10",
+          "matrixSize": [2, 1],
+          "scaleDenominator": 5357156.46431,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "11",
+          "matrixSize": [2, 1],
+          "scaleDenominator": 4464297.05359,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "12",
+          "matrixSize": [2, 2],
+          "scaleDenominator": 3571437.64288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "13",
+          "matrixSize": [3, 2],
+          "scaleDenominator": 2678578.23216,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "14",
+          "matrixSize": [3, 2],
+          "scaleDenominator": 2321434.46787,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "15",
+          "matrixSize": [4, 3],
+          "scaleDenominator": 1785718.82144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "16",
+          "matrixSize": [8, 5],
+          "scaleDenominator": 892859.410719,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "17",
+          "matrixSize": [19, 13],
+          "scaleDenominator": 357143.764288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "18",
+          "matrixSize": [38, 25],
+          "scaleDenominator": 178571.882144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "19",
+          "matrixSize": [94, 63],
+          "scaleDenominator": 71428.7528575,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "20",
+          "matrixSize": [188, 125],
+          "scaleDenominator": 35714.3764288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "21",
+          "matrixSize": [375, 250],
+          "scaleDenominator": 17857.1882144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "22",
+          "matrixSize": [750, 500],
+          "scaleDenominator": 8928.59410719,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "23",
+          "matrixSize": [938, 625],
+          "scaleDenominator": 7142.87528575,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "24",
+          "matrixSize": [1250, 834],
+          "scaleDenominator": 5357.15646431,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "25",
+          "matrixSize": [1875, 1250],
+          "scaleDenominator": 3571.43764288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "26",
+          "matrixSize": [3750, 2500],
+          "scaleDenominator": 1785.71882144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "27",
+          "matrixSize": [7500, 5000],
+          "scaleDenominator": 892.85941072,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }]
+      }, {
+        "layer": "ch.swisstopo-karto.schneeschuhrouten",
+        "opacity": "0.8",
+        "type": "WMTS",
+        "baseURL": "http://wmts6.geo.admin.ch/1.0.0/{Layer}/{style}/{Time}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.png",
+        "requestEncoding": "REST",
+        "style": "default",
+        "dimensions": ["Time"],
+        "dimensionParams": {
+          "TIME": "20151202"
+        },
+        "matrixSet": "21781",
+        "matrices": [{
+          "identifier": "0",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 14285750.5715,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "1",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 13392891.1608,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "2",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 12500031.7501,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "3",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 11607172.3393,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "4",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 10714312.9286,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "5",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 9821453.51791,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "6",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 8928594.10719,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "7",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 8035734.69647,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "8",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 7142875.28575,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "9",
+          "matrixSize": [2, 1],
+          "scaleDenominator": 6250015.87503,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "10",
+          "matrixSize": [2, 1],
+          "scaleDenominator": 5357156.46431,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "11",
+          "matrixSize": [2, 1],
+          "scaleDenominator": 4464297.05359,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "12",
+          "matrixSize": [2, 2],
+          "scaleDenominator": 3571437.64288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "13",
+          "matrixSize": [3, 2],
+          "scaleDenominator": 2678578.23216,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "14",
+          "matrixSize": [3, 2],
+          "scaleDenominator": 2321434.46787,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "15",
+          "matrixSize": [4, 3],
+          "scaleDenominator": 1785718.82144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "16",
+          "matrixSize": [8, 5],
+          "scaleDenominator": 892859.410719,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "17",
+          "matrixSize": [19, 13],
+          "scaleDenominator": 357143.764288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "18",
+          "matrixSize": [38, 25],
+          "scaleDenominator": 178571.882144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "19",
+          "matrixSize": [94, 63],
+          "scaleDenominator": 71428.7528575,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "20",
+          "matrixSize": [188, 125],
+          "scaleDenominator": 35714.3764288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "21",
+          "matrixSize": [375, 250],
+          "scaleDenominator": 17857.1882144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "22",
+          "matrixSize": [750, 500],
+          "scaleDenominator": 8928.59410719,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "23",
+          "matrixSize": [938, 625],
+          "scaleDenominator": 7142.87528575,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "24",
+          "matrixSize": [1250, 834],
+          "scaleDenominator": 5357.15646431,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "25",
+          "matrixSize": [1875, 1250],
+          "scaleDenominator": 3571.43764288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "26",
+          "matrixSize": [3750, 2500],
+          "scaleDenominator": 1785.71882144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "27",
+          "matrixSize": [7500, 5000],
+          "scaleDenominator": 892.85941072,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }]
+      }, {
+        "layer": "ch.bafu.wrz-wildruhezonen_portal",
+        "opacity": "0.6",
+        "type": "WMTS",
+        "baseURL": "http://wmts6.geo.admin.ch/1.0.0/{Layer}/{style}/{Time}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.png",
+        "requestEncoding": "REST",
+        "style": "default",
+        "dimensions": ["Time"],
+        "dimensionParams": {
+          "TIME": "20160106"
+        },
+        "matrixSet": "21781",
+        "matrices": [{
+          "identifier": "0",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 14285750.5715,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "1",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 13392891.1608,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "2",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 12500031.7501,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "3",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 11607172.3393,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "4",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 10714312.9286,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "5",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 9821453.51791,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "6",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 8928594.10719,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "7",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 8035734.69647,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "8",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 7142875.28575,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "9",
+          "matrixSize": [2, 1],
+          "scaleDenominator": 6250015.87503,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "10",
+          "matrixSize": [2, 1],
+          "scaleDenominator": 5357156.46431,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "11",
+          "matrixSize": [2, 1],
+          "scaleDenominator": 4464297.05359,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "12",
+          "matrixSize": [2, 2],
+          "scaleDenominator": 3571437.64288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "13",
+          "matrixSize": [3, 2],
+          "scaleDenominator": 2678578.23216,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "14",
+          "matrixSize": [3, 2],
+          "scaleDenominator": 2321434.46787,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "15",
+          "matrixSize": [4, 3],
+          "scaleDenominator": 1785718.82144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "16",
+          "matrixSize": [8, 5],
+          "scaleDenominator": 892859.410719,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "17",
+          "matrixSize": [19, 13],
+          "scaleDenominator": 357143.764288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "18",
+          "matrixSize": [38, 25],
+          "scaleDenominator": 178571.882144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "19",
+          "matrixSize": [94, 63],
+          "scaleDenominator": 71428.7528575,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "20",
+          "matrixSize": [188, 125],
+          "scaleDenominator": 35714.3764288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "21",
+          "matrixSize": [375, 250],
+          "scaleDenominator": 17857.1882144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "22",
+          "matrixSize": [750, 500],
+          "scaleDenominator": 8928.59410719,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "23",
+          "matrixSize": [938, 625],
+          "scaleDenominator": 7142.87528575,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "24",
+          "matrixSize": [1250, 834],
+          "scaleDenominator": 5357.15646431,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "25",
+          "matrixSize": [1875, 1250],
+          "scaleDenominator": 3571.43764288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "26",
+          "matrixSize": [3750, 2500],
+          "scaleDenominator": 1785.71882144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "27",
+          "matrixSize": [7500, 5000],
+          "scaleDenominator": 892.85941072,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }]
+      }, {
+        "layer": "ch.bafu.wrz-jagdbanngebiete_select",
+        "opacity": "0.6",
+        "type": "WMTS",
+        "baseURL": "http://wmts6.geo.admin.ch/1.0.0/{Layer}/{style}/{Time}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.png",
+        "requestEncoding": "REST",
+        "style": "default",
+        "dimensions": ["Time"],
+        "dimensionParams": {
+          "TIME": "20160106"
+        },
+        "matrixSet": "21781",
+        "matrices": [{
+          "identifier": "0",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 14285750.5715,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "1",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 13392891.1608,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "2",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 12500031.7501,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "3",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 11607172.3393,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "4",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 10714312.9286,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "5",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 9821453.51791,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "6",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 8928594.10719,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "7",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 8035734.69647,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "8",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 7142875.28575,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "9",
+          "matrixSize": [2, 1],
+          "scaleDenominator": 6250015.87503,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "10",
+          "matrixSize": [2, 1],
+          "scaleDenominator": 5357156.46431,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "11",
+          "matrixSize": [2, 1],
+          "scaleDenominator": 4464297.05359,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "12",
+          "matrixSize": [2, 2],
+          "scaleDenominator": 3571437.64288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "13",
+          "matrixSize": [3, 2],
+          "scaleDenominator": 2678578.23216,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "14",
+          "matrixSize": [3, 2],
+          "scaleDenominator": 2321434.46787,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "15",
+          "matrixSize": [4, 3],
+          "scaleDenominator": 1785718.82144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "16",
+          "matrixSize": [8, 5],
+          "scaleDenominator": 892859.410719,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "17",
+          "matrixSize": [19, 13],
+          "scaleDenominator": 357143.764288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "18",
+          "matrixSize": [38, 25],
+          "scaleDenominator": 178571.882144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "19",
+          "matrixSize": [94, 63],
+          "scaleDenominator": 71428.7528575,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "20",
+          "matrixSize": [188, 125],
+          "scaleDenominator": 35714.3764288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "21",
+          "matrixSize": [375, 250],
+          "scaleDenominator": 17857.1882144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "22",
+          "matrixSize": [750, 500],
+          "scaleDenominator": 8928.59410719,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "23",
+          "matrixSize": [938, 625],
+          "scaleDenominator": 7142.87528575,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "24",
+          "matrixSize": [1250, 834],
+          "scaleDenominator": 5357.15646431,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "25",
+          "matrixSize": [1875, 1250],
+          "scaleDenominator": 3571.43764288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "26",
+          "matrixSize": [3750, 2500],
+          "scaleDenominator": 1785.71882144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "27",
+          "matrixSize": [7500, 5000],
+          "scaleDenominator": 892.85941072,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }]
+      }, {
+        "layer": "ch.swisstopo-karto.hangneigung",
+        "opacity": "0.2",
+        "type": "WMTS",
+        "baseURL": "http://wmts6.geo.admin.ch/1.0.0/{Layer}/{style}/{Time}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.png",
+        "requestEncoding": "REST",
+        "style": "default",
+        "dimensions": ["Time"],
+        "dimensionParams": {
+          "TIME": "20151202"
+        },
+        "matrixSet": "21781",
+        "matrices": [{
+          "identifier": "0",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 14285750.5715,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "1",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 13392891.1608,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "2",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 12500031.7501,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "3",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 11607172.3393,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "4",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 10714312.9286,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "5",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 9821453.51791,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "6",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 8928594.10719,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "7",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 8035734.69647,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "8",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 7142875.28575,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "9",
+          "matrixSize": [2, 1],
+          "scaleDenominator": 6250015.87503,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "10",
+          "matrixSize": [2, 1],
+          "scaleDenominator": 5357156.46431,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "11",
+          "matrixSize": [2, 1],
+          "scaleDenominator": 4464297.05359,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "12",
+          "matrixSize": [2, 2],
+          "scaleDenominator": 3571437.64288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "13",
+          "matrixSize": [3, 2],
+          "scaleDenominator": 2678578.23216,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "14",
+          "matrixSize": [3, 2],
+          "scaleDenominator": 2321434.46787,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "15",
+          "matrixSize": [4, 3],
+          "scaleDenominator": 1785718.82144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "16",
+          "matrixSize": [8, 5],
+          "scaleDenominator": 892859.410719,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "17",
+          "matrixSize": [19, 13],
+          "scaleDenominator": 357143.764288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "18",
+          "matrixSize": [38, 25],
+          "scaleDenominator": 178571.882144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "19",
+          "matrixSize": [94, 63],
+          "scaleDenominator": 71428.7528575,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "20",
+          "matrixSize": [188, 125],
+          "scaleDenominator": 35714.3764288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "21",
+          "matrixSize": [375, 250],
+          "scaleDenominator": 17857.1882144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "22",
+          "matrixSize": [750, 500],
+          "scaleDenominator": 8928.59410719,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "23",
+          "matrixSize": [938, 625],
+          "scaleDenominator": 7142.87528575,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "24",
+          "matrixSize": [1250, 834],
+          "scaleDenominator": 5357.15646431,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "25",
+          "matrixSize": [1875, 1250],
+          "scaleDenominator": 3571.43764288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "26",
+          "matrixSize": [3750, 2500],
+          "scaleDenominator": 1785.71882144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "27",
+          "matrixSize": [7500, 5000],
+          "scaleDenominator": 892.85941072,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }]
+      }, {
+        "layer": "ch.swisstopo.pixelkarte-farbe-pk50.noscale",
+        "opacity": "0.85",
+        "type": "WMTS",
+        "baseURL": "http://wmts6.geo.admin.ch/1.0.0/{Layer}/{style}/{Time}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpeg",
+        "requestEncoding": "REST",
+        "style": "default",
+        "dimensions": ["Time"],
+        "dimensionParams": {
+          "TIME": "current"
+        },
+        "matrixSet": "21781",
+        "matrices": [{
+          "identifier": "0",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 14285750.5715,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "1",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 13392891.1608,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "2",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 12500031.7501,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "3",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 11607172.3393,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "4",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 10714312.9286,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "5",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 9821453.51791,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "6",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 8928594.10719,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "7",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 8035734.69647,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "8",
+          "matrixSize": [1, 1],
+          "scaleDenominator": 7142875.28575,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "9",
+          "matrixSize": [2, 1],
+          "scaleDenominator": 6250015.87503,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "10",
+          "matrixSize": [2, 1],
+          "scaleDenominator": 5357156.46431,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "11",
+          "matrixSize": [2, 1],
+          "scaleDenominator": 4464297.05359,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "12",
+          "matrixSize": [2, 2],
+          "scaleDenominator": 3571437.64288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "13",
+          "matrixSize": [3, 2],
+          "scaleDenominator": 2678578.23216,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "14",
+          "matrixSize": [3, 2],
+          "scaleDenominator": 2321434.46787,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "15",
+          "matrixSize": [4, 3],
+          "scaleDenominator": 1785718.82144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "16",
+          "matrixSize": [8, 5],
+          "scaleDenominator": 892859.410719,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "17",
+          "matrixSize": [19, 13],
+          "scaleDenominator": 357143.764288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "18",
+          "matrixSize": [38, 25],
+          "scaleDenominator": 178571.882144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "19",
+          "matrixSize": [94, 63],
+          "scaleDenominator": 71428.7528575,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "20",
+          "matrixSize": [188, 125],
+          "scaleDenominator": 35714.3764288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "21",
+          "matrixSize": [375, 250],
+          "scaleDenominator": 17857.1882144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "22",
+          "matrixSize": [750, 500],
+          "scaleDenominator": 8928.59410719,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "23",
+          "matrixSize": [938, 625],
+          "scaleDenominator": 7142.87528575,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "24",
+          "matrixSize": [1250, 834],
+          "scaleDenominator": 5357.15646431,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "25",
+          "matrixSize": [1875, 1250],
+          "scaleDenominator": 3571.43764288,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "26",
+          "matrixSize": [3750, 2500],
+          "scaleDenominator": 1785.71882144,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }, {
+          "identifier": "27",
+          "matrixSize": [7500, 5000],
+          "scaleDenominator": 892.85941072,
+          "tileSize": [256, 256],
+          "topLeftCorner": [420000, 350000]
+        }]
+      }],
+      "bbox": [654003.4027777776, 202276.9444444444, 661076.5972222221, 206863.05555555553]
+    }
+  },
+  "movie": false,
+  "pages": [{
+    "center": [657539.9999999999, 204569.99999999997],
+    "bbox": [654003.4027777776, 202276.9444444444, 661076.5972222221, 206863.05555555553],
+    "display": [802, 520],
+    "dataOwner": "© swisstopo,FOEN,ct. [FOEN]",
+    "thirdPartyDataOwner": false,
+    "shortLink": "https://mf-chsdi3.dev.bgdi.ch/6bbffc4e0d",
+    "rotation": 0,
+    "langen": true,
+    "timestamp": ""
+  }]
+}
