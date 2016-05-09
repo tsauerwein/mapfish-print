@@ -1,5 +1,7 @@
 package org.mapfish.print.processor.map;
 
+import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.Timer;
 import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 import com.google.common.io.Closer;
@@ -118,6 +120,9 @@ public final class CreateMapProcessor extends AbstractProcessor<CreateMapProcess
     @Autowired
     FeatureLayer.Plugin featureLayerPlugin;
 
+    @Autowired
+    private MetricRegistry registry;
+
     private BufferedImageType imageType = BufferedImageType.TYPE_4BYTE_ABGR;
 
     /**
@@ -140,10 +145,24 @@ public final class CreateMapProcessor extends AbstractProcessor<CreateMapProcess
             zoomToFeatures(param.tempTaskDirectory, param.clientHttpRequestFactory, mapValues, context);
         }
         final MapfishMapContext mapContext = createMapContext(mapValues);
-        final List<URI> graphics = createLayerGraphics(param.tempTaskDirectory, param.clientHttpRequestFactory,
-                mapValues, context, mapContext);
+
+        Timer.Context timer1 = this.registry.timer(CreateMapProcessor.class.getName() + "_createLayerGraphics()").time();
+        final List<URI> graphics;
+        try {
+            graphics = createLayerGraphics(param.tempTaskDirectory, param.clientHttpRequestFactory,
+                    mapValues, context, mapContext);
+        } finally {
+            timer1.stop();
+        }
         checkCancelState(context);
-        final URI mapSubReport = createMapSubReport(param.tempTaskDirectory, mapValues.getMapSize(), graphics, mapValues.getDpi());
+
+        Timer.Context timer2 = this.registry.timer(CreateMapProcessor.class.getName() + "_createMapSubReport").time();
+        final URI mapSubReport;
+        try {
+            mapSubReport = createMapSubReport(param.tempTaskDirectory, mapValues.getMapSize(), graphics, mapValues.getDpi());
+        } finally {
+            timer2.stop();
+        }
 
         return new Output(graphics, mapSubReport.toString(), mapContext);
     }
@@ -186,6 +205,10 @@ public final class CreateMapProcessor extends AbstractProcessor<CreateMapProcess
             checkCancelState(context);
             boolean isFirstLayer = i == 0;
 
+
+            final String name = layer.getClass().getName() + "_render()";
+            Timer.Context timerContext;
+
             File path = null;
             if (renderAsSvg(layer)) {
                 // render layer as SVG
@@ -193,7 +216,12 @@ public final class CreateMapProcessor extends AbstractProcessor<CreateMapProcess
 
                 try {
                     Graphics2D clippedGraphics2D = createClippedGraphics(mapContext, areaOfInterest, graphics2D);
-                    layer.render(clippedGraphics2D, clientHttpRequestFactory, mapContext, isFirstLayer);
+                    timerContext = this.registry.timer(name).time();
+                    try {
+                        layer.render(clippedGraphics2D, clientHttpRequestFactory, mapContext, isFirstLayer);
+                    } finally {
+                        timerContext.stop();
+                    }
 
                     path = new File(printDirectory, mapKey + "_layer_" + i + ".svg");
                     saveSvgFile(graphics2D, path);
@@ -206,7 +234,12 @@ public final class CreateMapProcessor extends AbstractProcessor<CreateMapProcess
                         mapContext.getMapSize().height, this.imageType.value);
                 Graphics2D graphics2D = createClippedGraphics(mapContext, areaOfInterest, bufferedImage.createGraphics());
                 try {
-                    layer.render(graphics2D, clientHttpRequestFactory, mapContext, isFirstLayer);
+                    timerContext = this.registry.timer(name).time();
+                    try {
+                        layer.render(graphics2D, clientHttpRequestFactory, mapContext, isFirstLayer);
+                    } finally {
+                        timerContext.stop();
+                    }
 
                     path = new File(printDirectory, mapKey + "_layer_" + i + ".png");
                     ImageIO.write(bufferedImage, "png", path);

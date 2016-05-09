@@ -1,6 +1,10 @@
 package org.mapfish.print.map.tiled.wms;
 
+
+import com.codahale.metrics.MetricRegistry;
+
 import jsr166y.ForkJoinPool;
+
 import org.geotools.coverage.grid.GridCoverage2D;
 import org.geotools.geometry.jts.ReferencedEnvelope;
 import org.mapfish.print.attribute.map.MapBounds;
@@ -18,6 +22,7 @@ import java.awt.Rectangle;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+
 import javax.annotation.Nonnull;
 
 import static org.mapfish.print.map.image.wms.WmsUtilities.makeWmsGetLayerRequest;
@@ -36,12 +41,14 @@ public final class TiledWmsLayer extends AbstractTiledLayer {
      * @param forkJoinPool  the thread pool for doing the rendering.
      * @param styleSupplier strategy for loading the style for this layer
      * @param param         the information needed to create WMS requests.
+     * @param registry Metrics registry.
      */
     public TiledWmsLayer(
             final ForkJoinPool forkJoinPool,
             final StyleSupplier<GridCoverage2D> styleSupplier,
-            final TiledWmsLayerParam param) {
-        super(forkJoinPool, styleSupplier, param);
+            final TiledWmsLayerParam param,
+            final MetricRegistry registry) {
+        super(forkJoinPool, styleSupplier, param, registry);
         this.param = param;
     }
 
