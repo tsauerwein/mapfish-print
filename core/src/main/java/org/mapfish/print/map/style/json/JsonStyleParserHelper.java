@@ -296,6 +296,12 @@ public final class JsonStyleParserHelper {
         // the view context, see http://docs.geoserver.org/stable/en/user/styling/sld-reference/labeling.html#partials
         textSymbolizer.getOptions().put("partials", "true");
 
+        textSymbolizer.getOptions().put("conflictResolution", "true");
+        textSymbolizer.getOptions().put("spaceAround", "5");
+        textSymbolizer.getOptions().put("goodnessOfFit", "0.01");
+        textSymbolizer.getOptions().put("maxDisplacement", "100");
+        textSymbolizer.getOptions().put("autoWrap", "100");
+
         if (styleJson.has(JSON_LABEL)) {
             final Expression label = parseExpression(null, styleJson, JSON_LABEL, new Function<String, Object>() {
                 @Nullable

@@ -3,31 +3,63 @@
   "outputFormat": "pdf",
   "attributes": {
     "map": {
-      "longitudeFirst": true,
-      "center": [5, 45],
-      "scale": 100000000,
-      "projection": "EPSG:4326",
-      "dpi": 72,
-      "rotation": 0,
+      "projection": "EPSG:2056",
+      "dpi": 100,
+      "rotation": 55.26239249861529,
+      "center": [
+        2742033,
+        1253823
+      ],
+      "scale": 25000,
       "layers": [
         {
-          "type": "geojson",
-          "geoJson": "file://countries.geojson",
-          "style": {
-            "version": "2",
-            "*": {
-              "symbolizers": [
-                {
-				   "type" : "polygon",
-				   "fillColor": "#5E7F99",
-				   "fillOpacity": 1,
-				   "strokeColor": "#CC1D18",
-				   "strokeOpacity": 1,
-				   "strokeWidth": 1
-                }
-              ]
-            }
-          }
+          "layers": [
+            "geoportal:a111_avdm01_up_fla",
+            "geoportal:a111_avdm01_up_sit",
+            "geoportal:a111_avdm01_up_lieg_sit",
+            "geoportal:d140_hhgrenzen_bereinigt",
+            "geoportal:s370_bienensperrgebiete_fla",
+            "geoportal:s370_bienenstandorte"
+          ],
+          "styles": [
+            "style_820_label",
+            "style_818_label",
+            "style_816_label",
+            "style_819_label",
+            "style_1216_label",
+            "style_1215_label"
+          ],
+          "imageFormat": "image/png",
+          "baseURL": "https://wms1.geoportal.ch/services/wms",
+          "serverType": "geoserver",
+          "version": "1.1.1",
+          "customParams": {
+            "TRANSPARENT": true,
+            "CQL_FILTER": "((access_level<=2)and(origin='geoportal')and(death IS NULL));((access_level<=2)and(origin='geoportal')and(death IS NULL));((access_level<=2)and(origin='geoportal')and(death IS NULL));((access_level<=2)and(origin='geoportal')and(death IS NULL));((access_level<=2)and(origin='geoportal')and(importtable_id=456)and(death IS NULL));((access_level<=2)and(origin='geoportal')and(((importtable_id=391)or(importtable_id=392)))and(death IS NULL))"
+          },
+          "type": "wms"
+        },
+        {
+          "layers": [
+            "geoportal:s370_bienenstandorte"
+          ],
+          "styles": [
+            "style_1215"
+          ],
+          "imageFormat": "image/png",
+          "baseURL": "https://wms1.geoportal.ch/services/wms",
+          "serverType": "geoserver",
+          "version": "1.1.1",
+          "customParams": {
+            "TRANSPARENT": true,
+            "CQL_FILTER": "((access_level<=2)and(origin='geoportal')and(((importtable_id=391)or(importtable_id=392)))and(death IS NULL))"
+          },
+          "type": "tiledwms",
+          "tileSize": [
+            512,
+            512
+          ],
+          "opacity": 1
         }
       ]
     }
