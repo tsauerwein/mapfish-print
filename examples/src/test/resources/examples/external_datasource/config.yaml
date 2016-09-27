@@ -1,0 +1,16 @@
+throwErrorOnExtraParameters: true
+
+templates:
+    A4 portrait: !template
+        reportTemplate: A4_Portrait.jrxml
+        attributes:
+            id: !integer {}
+            map: !map
+                maxDpi: 254
+                width: 200
+                height: 200
+
+        processors:
+        - !reportBuilder
+            directory: '.'
+        - !createMap {}

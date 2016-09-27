@@ -188,10 +188,19 @@ public abstract class AbstractJasperReportOutputFormat implements OutputFormat {
                 dataSource = new JREmptyDataSource();
             }
             checkRequiredFields(config, dataSource, template.getReportTemplate());
-            print = fillManager.fill(
-                    jasperTemplateBuild.getAbsolutePath(),
-                    values.asMap(),
-                    dataSource);
+
+            // TODO this should come from the config
+            boolean manualDatasource = true;
+            if (manualDatasource) {
+                print = fillManager.fill(
+                        jasperTemplateBuild.getAbsolutePath(),
+                        values.asMap());
+            } else {
+                print = fillManager.fill(
+                        jasperTemplateBuild.getAbsolutePath(),
+                        values.asMap(),
+                        dataSource);
+            }
         }
         print.setProperty(Renderable.PROPERTY_IMAGE_DPI, String.valueOf(Math.round(maxDpi[0])));
         return new Print(getLocalJasperReportsContext(config), print, values, maxDpi[0], maxDpi[1]);
