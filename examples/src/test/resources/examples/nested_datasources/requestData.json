@@ -1,0 +1,39 @@
+{
+    "layout": "A4 portrait",
+    "outputFormat": "pdf",
+    "attributes": {
+        "title": "Soils",
+        "comments": "...",
+        "soils": [{
+            "soilName": "Soil A",
+            "profiles": [
+	            {
+	            	"profileName": "Profile A A",
+	            	"horizons": [{
+	                    "horizonName": "Horizon A A A"
+	                 }]
+	            }, {
+	            	"profileName": "Profile A B",
+	            	"horizons": [{
+	                    "horizonName": "Horizon A B A"
+	                 }]
+	            }
+            ]
+        }, {
+            "soilName": "Soil B",
+            "profiles": [
+	            {
+	            	"profileName": "Profile B A",
+	            	"horizons": [{
+	                    "horizonName": "Horizon B A A"
+	                 }]
+	            }, {
+	            	"profileName": "Profile B B",
+	            	"horizons": [{
+	                    "horizonName": "Horizon B B A"
+	                 }]
+	            }
+            ]
+        }]
+    }
+}

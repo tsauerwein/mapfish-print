@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.2.final using JasperReports Library version 6.2.2  -->
+<!-- 2016-09-30T16:54:40 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Baselland_A4_Portrait" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5fb2edee-19b3-488e-bb13-1a3c485efd5f">
+	<parameter name="SUBREPORT_DIR" class="java.lang.String"/>
+	<field name="profileName" class="java.lang.String"/>
+	<field name="horizonDatasource" class="net.sf.jasperreports.engine.data.JRMapCollectionDataSource"/>
+	<title>
+		<band>
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+		</band>
+	</title>
+	<detail>
+		<band height="194" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="340" height="23" uuid="b00afc01-efec-4c59-98a7-7416c100f0b3"/>
+				<textElement>
+					<font size="16" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{profileName}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="0" y="40" width="555" height="140" uuid="ff13d96f-6be2-4ebb-8ac0-c0cecdf39ea2"/>
+				<dataSourceExpression><![CDATA[$F{horizonDatasource}]]></dataSourceExpression>
+				<subreportExpression><![CDATA["horizons.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<summary>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+		</band>
+	</summary>
+</jasperReport>

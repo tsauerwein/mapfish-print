@@ -1,0 +1,36 @@
+throwErrorOnExtraParameters: true
+
+templates:
+    A4 portrait: !template
+        reportTemplate: A4_Portrait.jrxml
+        tableData: jrDataSource
+        attributes:
+            title: !string {}
+            comments: !string {}
+            soils: !datasource
+                attributes:
+                    soilName: !string {}
+                    profiles: !datasource
+                        attributes:
+                            profileName: !string {}
+                            horizons: !datasource
+                                attributes:
+                                    horizonName: !string {}
+
+        processors:
+        - !reportBuilder
+          directory: '.'
+        - !createDataSource
+          inputMapper: {soils: datasource}
+          processors:
+          - !createDataSource
+            inputMapper: {profiles: datasource}
+            outputMapper: {jrDataSource: profileDatasource}
+            processors:
+            - !createDataSource
+              inputMapper: {horizons: datasource}
+              outputMapper: {jrDataSource: horizonDatasource}
+              processors:
+              # currently `processors` may not be empty, that's why the reportBuilder is given here
+              - !reportBuilder
+                directory: .
